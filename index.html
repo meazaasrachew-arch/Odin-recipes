@@ -1,15 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>My Odin Recipies</title>
-    </head>
-    <body>
-        <h1>Odin Recipes</h1>
-         <h3>Our Favorite Recipes</h3> 
-        <ul>
-            <li><a href="tacos.html">Tacos Recipe</a></li>
-            <li><a href="lasagna.html">Lasagna Recipe</a></li>
-        </ul>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>My Odin Recipes</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">Odin Recipes</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#" style="color: white; text-decoration: none;">Home</a></li>
+                <li><a href="#" style="color: white; text-decoration: none;">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 class="section-title" style="text-align: center; color: white; margin-top: 20px;">Our Favorite Recipes</h1>
+
+    <div class="recipe-container">
+        
+        <div class="recipe-card taco">
+            <img src="tacos.jpeg" alt="Tacos" class="recipe-img">
+            <h2>Tacos Recipe</h2>
+            <p class="recipe-desc">Delicious and spicy Mexican tacos.</p>
+             <a href="tacos.html" class="btn">View Recipe</a>
+           
+        </div>
+
+        <div class="recipe-card lasagna">
+            <img src="lasagna.jpeg" alt="Lasagna" class="recipe-img">
+            <h2>Lasagna Recipe</h2>
+            <p class="recipe-desc">Cheesy and rich classic Italian lasagna.</p>
+            <a href="lasagna.html" class="btn">View Recipe</a>
+        </div>
+
+    </div> </body>
 </html>

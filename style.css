@@ -1,0 +1,128 @@
+body {
+    background-color: #f8f9fa;
+    margin: 0;
+}/* የዛሬው የሄደር ኮድ እዚህም ይሰራል */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background-color: #333;
+    color: white;
+}
+
+.recipe-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.recipe-card {
+    width: 400x;
+    height: 320px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    overflow: hidden; /* ምስሉ ከካርዱ እንዳይወጣ */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* ጽሁፉ ከታች እንዲሆን */
+    padding: 30px;
+    transition: transform 0.3s; /* ለHover effect */
+}
+.recipe-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+/* ለካርዶቹ የጀርባ ቀለም ወይም ምስል መስጠት ትችያለሽ */
+.taco { 
+    background-color: #ffcc80;
+}
+.lasagna { 
+    background-color: #ffabab;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #333; /* ያንቺን ቀይ ቀለም ተጠቀምኩ */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.recipe-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+.recipe-img {
+    width: 220px;
+    height: 180px;
+    object-fit: cover;
+    object-position: bottom;
+    transition: transform 0.4s ease;
+}
+
+.recipe-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.recipe-card:hover .recipe-img {
+    transform: scale(1.1);
+}
+.recipe-desc {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0 10px 15px 10px;
+    line-height: 1.4;
+}
+.content-container {
+    max-width: 700px;
+    margin: 50px auto; /* ገጹን መሃል ያደርገዋል */
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    line-height: 1.6; /* ጽሁፉ እንዲነበብ ክፍተት ይሰጣል */
+}
+
+.main-recipe-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.back-btn {
+    text-decoration: none;
+    color: #b22222;
+    font-weight: bold;
+}
+/* ገጹን መሃል ላይ ለማምጣት */
+.recipe-content-wrapper {
+    max-width: 800px;    /* የገጹ ከፍተኛ ስፋት */
+    margin: 40px auto;   /* ገጹን በትክክል መሃል ላይ ያደርገዋል */
+    padding: 20px;
+    background-color: white; /* ይዘቱ ጎልቶ እንዲታይ */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* ትንሽ ጥላ ውበት ይሰጠዋል */
+}
+
+/* ምስሉን መሃል ለማድረግ */
+.recipe-detail-img {
+    display: block;      /* ምስሉን እንደ ሳጥን እንዲያየው */
+    margin: 20px auto;   /* ምስሉን በራሱ መሃል ያደርገዋል */
+    width: 100%;         /* የሳጥኑን ስፋት ይይዛል */
+    max-width: 500px;    /* ምስሉ በጣም እንዳይሰፋ መገደቢያ */
+    border-radius: 10px;
+}
+
+/* ርዕሶቹን መሃል ለማድረግ */
+.recipe-content-wrapper h1 {
+    text-align: center;
+    color: #333;
+}
